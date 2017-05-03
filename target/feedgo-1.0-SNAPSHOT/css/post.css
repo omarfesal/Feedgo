@@ -1,0 +1,292 @@
+
+/* clear */
+
+a:hover, a:focus{
+    color: #fff;
+    outline: none;
+}
+
+/* clear */
+body{
+    background-color: #677077;
+    color: #000;
+}
+a{
+    text-decoration: none;
+    font-family: 'Raleway', 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.clear{
+    clear: both
+}
+
+/* indie-flower-regular - latin */
+@font-face {
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/indie-flower-v8-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Indie Flower'), local('IndieFlower'),
+        url('../fonts/indie-flower-v8-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/indie-flower-v8-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/indie-flower-v8-latin-regular.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/indie-flower-v8-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/indie-flower-v8-latin-regular.svg#IndieFlower') format('svg'); /* Legacy iOS */
+}
+
+
+
+/* start header*/
+
+#header {
+    height: 110px;
+    position: relative;
+    overflow: hidden;
+}
+#header .title {
+
+    font-family: "Indie Flower" ;
+    color: #f39c12;
+    font-size: 40px;
+    position: absolute;
+    left: 20px;
+    display: inline;
+}
+
+#header .description {
+    font-size: 13px;
+    color: #ccc;
+    position: absolute;
+    left: 115px;
+    top: 62px;
+}
+
+
+nav {
+    width: 100%;
+    background-color: #f2b632;
+    margin-bottom: 20px
+
+}
+nav ul{
+    width: 1100px;
+    margin: 0 auto;
+    height: 50px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    color: #ccc;
+}
+nav ul li:hover{
+    background-color: #9a7524
+}
+nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    float: left;
+    padding: 14px;
+
+}
+
+nav ul li:last-child{
+    float: right;
+}
+
+/* container */
+
+#post_container{
+    background-color:#fff;
+    width: 72%;
+    float: left;
+    margin-left: 1%;
+    margin-top: 10px;
+    position: relative;
+    padding-bottom: 15px;
+}
+#post_container h1 span{
+    margin-left: 10px
+}
+#post_container img{
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+
+}
+#post_container p{
+    padding: 10px
+}    
+#post_container #comments #oldComment{
+    background: #2d2d2d;
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden;
+}
+#post_container #comments .commnter_info{
+    background: #fff;
+    float:left;
+    width: 10%;
+    box-sizing: border-box;
+
+
+}
+#post_container #comments .commnter_info img {
+    height: 95px;
+    width: 95px;
+}
+#post_container #comments #comment{
+    float: right;
+    width: 90%;
+}
+span#nameOfCommenter {
+    display: block;
+    text-align: center;
+    color: #000
+}
+#post_container #comments #comment span {
+    padding: 17px;
+    display: block;
+    word-wrap: break-word;
+    color: #fff;
+    font-size: 18px;
+}
+#new_commenter form{
+    overflow: hidden
+}
+#new_commenter form textArea{
+    display: block;
+    float: left;
+    width: 95%;
+}
+#new_commenter form input[type=submit]{
+    background: #F2B632;
+    border: 0;
+    padding: 10px 20px;
+    display: block;
+    clear: both;
+    float: right;
+    margin: 10px;
+}
+/* sidebar */
+aside{
+    width: 24%;
+    overflow: hidden;
+    float: right;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.78);
+    margin-right: 1.5%;
+}
+aside .block{
+    background-color: rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+}
+
+aside .block .category{
+    padding: 10px;
+    text-align: center;
+    background-color: #f2b632;
+    color: #fff
+}
+
+aside .block .feed {
+    height: 132px;
+    margin: 0px 0;
+    cursor: pointer;
+}
+
+aside .block .feed:hover {
+    box-shadow: 0 4px 16px 10px rgba(19, 35, 47, 0.13);
+    transition: .5s ;
+}
+aside .block .feed img{
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 3px
+}
+aside .block .feed  div{
+    padding: 0;
+    float: right;
+    width: 75%;
+    margin-left: 4%;
+}
+footer{
+    background: #f2b632;
+    height: 200px;
+    margin-top: 10px;
+}
+
+/*vimeo*/
+/* Vimeo */
+
+span#created_date {
+    position: absolute;
+    top: 71px;
+    left: 0;
+    background: #ccc;
+    padding: 10px;
+}
+
+.share{
+    display: block;
+    text-align:center
+}
+.wall {
+    border-bottom: 4px dotted #ccc;
+    padding-bottom: 47px;
+    margin-bottom: 30px;
+}
+.comments {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 27px;
+}
+.br-wrapper.br-theme-fontawesome-stars {
+    margin-top: 50px;
+}
+span.rate {
+    width: 15%;
+    float: left;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 50px
+}
+.name {
+    background-color: #F2B632;
+    margin-right: 10px;
+    float: left;
+    margin-bottom: 10px;
+}
+a{
+    color: blue;
+}
+#post_container a:hover{
+    color: red
+}
+#RatePost .jq-ry-container {
+    position: absolute;
+    top: 41px;
+    left: -19px;
+}
+#RatePost {
+    position: absolute;
+    top: 41px;
+    right: 27px;
+    background: #F2B632;
+    color: #fff;
+    padding: 10px;
+}
+div#share {
+    margin-top: 40px;
+    text-align: center;
+}
+

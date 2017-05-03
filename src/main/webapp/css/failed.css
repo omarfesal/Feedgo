@@ -1,0 +1,27 @@
+body{
+    background-color: #677077;
+}
+
+.failed{
+    background: rgba(255, 255, 255, 0.08);
+    margin: 100px auto;
+    width: 500px;
+    padding: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    color: red;
+    font-size: 20px
+}
+
+a{
+    background: #f2b632;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    font-size: 20px
+}
+a:hover{
+    background-color: #9a7524
+}

@@ -1,0 +1,232 @@
+body{
+    background-color: #677077;
+
+}
+a{
+    text-decoration: none;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.clear{
+    clear: both
+}
+
+/* indie-flower-regular - latin */
+@font-face {
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/indie-flower-v8-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Indie Flower'), local('IndieFlower'),
+        url('../fonts/indie-flower-v8-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/indie-flower-v8-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/indie-flower-v8-latin-regular.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/indie-flower-v8-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/indie-flower-v8-latin-regular.svg#IndieFlower') format('svg'); /* Legacy iOS */
+}
+
+
+
+/* start header*/
+
+#header {
+    height: 110px;
+    position: relative;
+    overflow: hidden;
+}
+#header .title {
+
+    font-family: "Indie Flower" ;
+    color: #f39c12;
+    font-size: 40px;
+    position: absolute;
+    left: 20px;
+    display: inline;
+}
+
+#header .description {
+    font-size: 13px;
+    color: #ccc;
+    position: absolute;
+    left: 115px;
+    top: 62px;
+}
+
+
+nav {
+    width: 100%;
+    background-color: #f2b632;
+    margin-bottom: 20px
+
+}
+nav ul{
+    width: 1100px;
+    margin: 0 auto;
+    height: 50px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    color: #ccc;
+}
+nav ul li:hover{
+    background-color: #9a7524
+}
+nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    float: left;
+    padding: 14px;
+
+}
+
+nav ul li:last-child{
+    float: right;
+}
+
+
+/* start attached apis */
+
+.apis .container{
+    width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 10px;
+}
+
+.apis .container h3{
+    color: #fff;
+    text-align: center
+}
+
+.apis .container .api{
+    background-color: #677077;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden
+} 
+.apis .container .api .name{
+    float: left;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase
+}
+.apis .container .slideshare .name{
+    float: none;
+    margin-top: 10px
+}
+.apis .container .api button{
+    float: right;
+    border: 0;
+    background: rgba(25, 1, 1, 0);
+    height: 100%;
+
+}
+.apis .container .api button a {
+    color: #fff;
+    background-color: #f2b632;
+    padding: 5px 60px;
+}
+.apis .container .api button a:hover{
+    background-color: #9a7524
+
+}
+#submitshare{
+    color: #fff;
+    background-color: #f2b632;
+    padding: 5px 60px;
+    margin-left: 22px;
+    border: 0;
+    display: inline;
+}
+input[type="text"] {
+    padding: 10px;
+    width: 172px;
+    margin-left: 28px;
+}
+/* end attached apis */
+
+/* profile setting */
+#account_setting{
+    background-color: rgba(255, 255, 255, 0.08);
+    width: 1000px;
+    margin: 20px auto;
+    padding: 10px;
+    overflow: hidden;
+    position: relative
+}
+#account_setting h3{
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+}
+#account_setting span#error {
+    display: none;
+    background: rgb(204, 204, 204);
+    padding: 10px;
+    margin-top: 10px;
+    color: red;
+}
+
+#account_setting img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    float: left;
+    margin-top: 10px
+}
+#account_setting #info{
+    float: right;
+    margin-top: 38px;
+    margin-right: 240px;
+}
+#account_setting #info div{
+    margin-top: 10px;
+    background-color: #677077;
+    padding: 20px;
+    overflow: hidden
+}
+
+#account_setting #info div label{
+    color: #fff;
+    text-transform: capitalize;
+    width: 100px;
+    display: inline-block
+}
+#account_setting #info div input{
+    margin: 0 20px;
+    padding: 10px 5px;
+    background-color: #737b82;
+    border: 0;
+}
+
+#account_setting #info div button,#uploadImg{
+    padding: 11px 30px;
+    border: 0;
+    background-color: #f2b632; 
+    float: right;
+    cursor: pointer;
+    color: #fff
+
+}
+#account_setting #info div button:hover,input[type=submit]:hover{
+    background-color: #9a7524
+
+}
+
+#account_setting #info input#uploadImg {
+    position: absolute;
+    left: 53px;
+    bottom: 104px;
+}
+
+#account_setting #info input[name=file] {
+    position: absolute;
+    left: 65px;
+    bottom: 159px;
+    width: 100px;
+}
